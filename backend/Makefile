@@ -11,9 +11,9 @@ dropdb:
 	docker exec -it lumaa_postgres dropdb lumaa
 
 migrateup:
-	npx tsx src/migrateUp.ts
+	npx tsx src/utils/migrateUp.ts
 
 migratedown:
-	npx tsx src/migrateDown.ts
+	npx tsx src/utils/migrateDown.ts
 	
 .PHONY: postgres createdb dropdb migrateup migratedown
